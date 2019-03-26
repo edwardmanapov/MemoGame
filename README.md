@@ -15,3 +15,5 @@ is hidden. Once the user clicks on one tile it flips over and the letter reveals
 make it flip so another letter is shown. If the letters match the tiles remain flipped on the front side.
 Otherwise the flipped back again. Once user had found all the pair tiles hidden, another board is
 loaded with different random generated letters behind.
+
+![GitHub Logo](/test/e2e.png)
