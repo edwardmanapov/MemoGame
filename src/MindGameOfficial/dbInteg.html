@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	 <head>
+	 
+		<script type = "text /javascript" src="js/jquery.js"></script>
+		<link href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1/prototype.js"></script>
+		<link href="css/layout.css" rel="stylesheet" />
+		<script src="js/script.js"></script>
+		
+		<title>Mind Game</title>
+		
+		<script type="text /javascript">
+        function NavigateToGame() {
+            location.href = "../mindgame.html";
+        }
+		</script>
+		
+	 </head>
+	 
+	 <body>
+	 
+		 <div class="container">
+			 <div id="login-form">
+			 
+				<h3>New Game</h3>
+				
+			 <fieldset>
+				 <form method ="post" action="php/new_player_activity.php">				
+					 <input type "text" required value="Enter your name" onBlur="if(this.value=='')this.value=''" onFocus="if(this.value=='Enter your name')this.value='' " name= "player_name"/>
+						 <form>
+							<input type="submit" value="Play" onclick="NavigateToGame();" />
+						 </form>
+				 </form>
+			 </fieldset>
+			 </div>
+		 </div>
+		 
+		 <br>
+		 <br>
+		 
+		<div id="memory_board"></div>
+		<script>newBoard();</script>
+		
+	 </body>
+	 
+</html>
